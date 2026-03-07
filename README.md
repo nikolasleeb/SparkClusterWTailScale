@@ -16,8 +16,8 @@ The idea of this project came from needing to use AWS Glue for a semester long p
 
 1. SetUpSteps
    - installing tailscale and software stack
-2. ??
-   - ??
+2. Automation
+   - installing and modifying the scripts to automate Spark Cluster startup and shutdown
 
 ---
 
