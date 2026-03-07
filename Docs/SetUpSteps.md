@@ -165,3 +165,36 @@ spark-submit \
 ```
 
 \* change 'master-device-name' to your Master Node's MagicDNS name \*
+
+- to confirm that it worked correctly, ensure in the log that all the executors finished like so:
+![successful distributed_test.py](../Images/SetUpStep-SuccesfulDistributedTest.png)
+
+### Step 7. Shut Down Spark Cluster
+
+- On each Worker Node run:
+
+```bash
+$SPARK_HOME/sbin/stop-worker.sh
+```
+
+- On the Master Node run:
+
+```bash
+$SPARK_HOME/sbin/stop-master.sh
+```
+
+- To ensure everything shut down run:
+
+```bash
+jps
+```
+
+- you should only see xxxxx Jps
+  - if you see the following:
+    - xxxxx Worker or
+    - xxxxx Master
+  - then run:
+  
+    ```bash
+    pkill -f org.apache.spark
+    ```
