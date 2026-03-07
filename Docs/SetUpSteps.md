@@ -142,7 +142,7 @@ spark://device-name:7077
 
 Step 5. Verify the UI Works in a Browser
 
-- when you copy the command into a browser node you should see an image similar to this one ![Spark UI](Images/SetupSteps-SparkUI.png)
+- when you copy the command into a browser node you should see an image similar to this one ![Spark UI](../Images/SetupSteps-SparkUI.png)
 
 [http://master-device-name:8080]
 
