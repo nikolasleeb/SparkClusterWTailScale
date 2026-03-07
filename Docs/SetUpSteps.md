@@ -102,7 +102,7 @@ conda activate spark310
 
 ## Testing the Cluster
 
-Step 1. Activate Conda
+### Step 1. Activate Conda
 
 ```bash
 conda activate spark310
@@ -110,7 +110,7 @@ conda activate spark310
 
 - do this on each device
 
-Step 2. Find the Tailscale MagicDNS Names for Each Node
+### Step 2. Find the Tailscale MagicDNS Names for Each Node
 
 ```bash
 tailscale status
@@ -118,7 +118,7 @@ tailscale status
 
 - remember the MagicDNS names for each device you want to be a node
 
-Step 3. Start the Master Node
+### Step 3. Start the Master Node
 
 - run this command from the device to be the Master Node
 
@@ -129,7 +129,7 @@ $SPARK_HOME/sbin/start-master.sh \
 
 \* change 'master-device-name' to your MagicDNS name from step 2 that you want to be the Master Node \*
 
-Step 4. Start the Worker Nodes
+### Step 4. Start the Worker Nodes
 
 - run this command from each of the devices to be the Worker Nodes
 
@@ -140,12 +140,28 @@ spark://device-name:7077
 
 \* change 'device-name' to your MagicDNS name from step 2 that will make up each Worker Node \*
 
-Step 5. Verify the UI Works in a Browser
+### Step 5. Verify the UI Works in a Browser
 
-- when you copy the command into a browser node you should see an image similar to this one ![Spark UI](../Images/SetupSteps-SparkUI.png)
+- to verify the state of a Master or Worker node before checking the browser, use the below command in terminal
 
-[http://master-device-name:8080]
+```bash
+jps
+```
+
+- when you copy the link into a browser, you should see an image similar to the one below
+
+    [http://master-device-name:8080]
+
+    \* change 'master-device-name' to your Master Node's MagicDNS name \*
+
+![Spark UI](../Images/SetupSteps-SparkUI.png)
+
+### Step 6. Use the distributed_test.py to Test the Cluster
+
+```bash
+spark-submit \
+--master spark://master-device-name:7077 \
+~/file/path/distributed_test.py
+```
 
 \* change 'master-device-name' to your Master Node's MagicDNS name \*
-
-Step 6. Use the

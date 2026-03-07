@@ -32,4 +32,13 @@ Due to the age of the TrashCan and iMac, the software stack of this cluster is s
 - Spark
   - 4.1.1
 - Python
-  - 3.10.XX
+  - 3.10.x (Conda environment )
+
+- Python Libraries
+  - pyspark
+  - jupyer
+  - ipykernel
+  - optional libraries
+    - pandas
+    - numpy
+    - matplotlib
