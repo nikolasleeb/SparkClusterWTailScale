@@ -12,12 +12,33 @@ The idea of this project came from needing to use AWS Glue for a semester long p
 
 ---
 
-## Instructions
+## Table of Contents
 
-1. SetUpSteps
-   - installing tailscale and software stack
-2. Automation
-   - installing and modifying the scripts to automate Spark Cluster startup and shutdown
+- [Spark Cluster with Tailscale](#spark-cluster-with-tailscale)
+  - [Table of Contents](#table-of-contents)
+    - [Setup and Configuration Guides](#setup-and-configuration-guides)
+  - [Cluster Architecture](#cluster-architecture)
+    - [Master Node](#master-node)
+    - [Worker Nodes](#worker-nodes)
+  - [Software Stack](#software-stack)
+  - [Networking](#networking)
+  - [Scripts](#scripts)
+    - [Start Cluster](#start-cluster)
+    - [Stop Cluster](#stop-cluster)
+  - [Spark Web UI](#spark-web-ui)
+  - [Example Job Submission](#example-job-submission)
+  - [Purpose of This Project](#purpose-of-this-project)
+  - [Future Improvements](#future-improvements)
+
+### Setup and Configuration Guides
+
+The detailed setup documentation is located in the **Docs** folder:
+
+- [Cluster Setup Steps](Docs/SetUpSteps.md)
+- [Automation Scripts Setup](Docs/SettingUpAutomationScript(VSCodeJupyter).md)
+- [Enabling Event Logging](Docs/EnablingEventLogging.md)
+- [Troubleshooting and Common Problems](Docs/OtherProblems.md)
+- [My Hardware and Software Versions](Docs/MyDevicesAndSoftwareVersions.md)
 
 ---
 
@@ -178,3 +199,4 @@ Potential future additions to this setup include:
 - Experimenting with Spark Streaming
 - Adding distributed storage
 - Expanding the cluster with additional nodes
+- Learning how to interpet the Spark UI websites
