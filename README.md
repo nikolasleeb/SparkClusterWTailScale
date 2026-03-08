@@ -10,11 +10,20 @@ The goal of this setup is to allow several personal machines to function togethe
 
 The idea of this project came from needing to use AWS Glue for a semester long project in MIS 584 "Big Data Technologies". Previously, AWS was only running AWS Lambda API calls, adding daily Glue jobs to transform the data was rapidly increasing the cost. Since AWS Glue uses Spark, I decided to try running the jobs using Spark on my own devices.
 
+## AI Assistance Acknowledgement
+
+Portions of this project were developed with the assistance of a Large Language Model (LLM). The process of configuring the Spark cluster, troubleshooting issues, and documenting the setup steps was guided by iterative interaction with an AI assistant. 
+
+The LLM helped translate personal notes, terminal logs, and troubleshooting observations into structured documentation and setup guides. All configuration steps, scripts, and results were tested and validated on the machines listed in this repository before being included in the documentation.
+
+The goal of using the LLM in this context was to accelerate learning and help convert real-world experimentation into clear, reproducible documentation for others who may want to build a similar small-scale distributed Spark environment.
+
 ---
 
 ## Table of Contents
 
 - [Spark Cluster with Tailscale](#spark-cluster-with-tailscale)
+  - [AI Assistance Acknowledgement](#ai-assistance-acknowledgement)
   - [Table of Contents](#table-of-contents)
     - [Setup and Configuration Guides](#setup-and-configuration-guides)
   - [Cluster Architecture](#cluster-architecture)
