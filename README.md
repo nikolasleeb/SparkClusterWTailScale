@@ -12,7 +12,7 @@ The idea of this project came from needing to use AWS Glue for a semester long p
 
 ## AI Assistance Acknowledgement
 
-Portions of this project were developed with the assistance of a Large Language Model (LLM). The process of configuring the Spark cluster, troubleshooting issues, and documenting the setup steps was guided by iterative interaction with an AI assistant. 
+Portions of this project were developed with the assistance of a Large Language Model (LLM). The process of configuring the Spark cluster, troubleshooting issues, and documenting the setup steps was guided by iterative interaction with an AI assistant.
 
 The LLM helped translate personal notes, terminal logs, and troubleshooting observations into structured documentation and setup guides. All configuration steps, scripts, and results were tested and validated on the machines listed in this repository before being included in the documentation.
 
